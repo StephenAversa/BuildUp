@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:gravity="center" 
+    android:background = "#404040">
+    
+<TableRow>
+   
+<ImageButton
+    android:id="@+id/dom0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+
+<ImageButton
+    android:id="@+id/dom1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:padding="14dip"
+    android:onClick="chooseStack"/>
+    	</TableRow>
+
+        <TableRow>
+<ImageButton
+    android:id="@+id/dom6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:onClick="chooseStack"/>
+
+<ImageButton
+    android:id="@+id/dom7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:src="@drawable/w_temp" 
+    android:onClick="chooseStack"/>
+
+<ImageButton
+    android:id="@+id/dom8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:src="@drawable/w_temp"
+    android:onClick="chooseStack"/>
+
+<ImageButton
+    android:id="@+id/dom9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:onClick="chooseStack"/>
+<ImageButton
+    android:id="@+id/dom11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/w_temp" 
+    android:background="@null"
+    android:onClick="chooseStack"/>
+
+   </TableRow>
+        
+   <RelativeLayout>
+		<ImageView
+	    android:id="@+id/computer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="78dp"
+		android:src="@drawable/comp" />
+		<TextView
+        android:id="@+id/computer_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:textSize="28sp"
+        android:layout_toRightOf="@id/computer" />
+		<TextView
+        android:id="@+id/player_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humScore"
+        android:textSize="28sp"
+        android:layout_below="@id/computer"/>
+       	<TextView
+        android:id="@+id/computer_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compScore"
+        android:textSize="28sp"
+        android:layout_below="@id/player_score"/>
+        <TextView
+        android:id="@+id/player_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humWins"
+        android:textSize="28sp"
+        android:layout_below="@id/computer_score"/>
+        <TextView
+        android:id="@+id/computer_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comWins"
+        android:textSize="28sp"
+        android:layout_below="@id/player_wins"/>
+       	
+		
+</RelativeLayout>
+        
+        <TableRow android:minHeight="200dp" android:layout_height="wrap_content"></TableRow>
+        
+        <TableRow>
+        <Button
+        android:id="@+id/confirmMove"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+        android:text="@string/confirm"
+        android:onClick = "takeMove"/>
+		
+		<Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/help"
+        android:onClick = "getHelp"/>
+		
+		<Button
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pass"
+        android:onClick = "pass"/>
+		
+		<Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/save"
+        android:onClick = "askSave"/>
+            
+        </TableRow>
+        
+        <TableRow 
+    			android:background="#1A1A1A">
+            
+            <ImageButton
+			    android:id="@+id/hand0"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+			<ImageButton
+			    android:id="@+id/hand1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+			<ImageButton
+			    android:id="@+id/hand2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+			<ImageButton
+			    android:id="@+id/hand3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+			<ImageButton
+			    android:id="@+id/hand4"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+			<ImageButton
+			    android:id="@+id/hand5"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/w_temp" 
+			    android:background="@null"
+			    android:padding="14dip"
+			    android:onClick = "chooseHand"/>
+   
+        </TableRow>
+        
+        <TableRow android:minHeight="100dp" android:layout_height="wrap_content"></TableRow>
+        
+
+        
+
+</TableLayout>
+
+
+
